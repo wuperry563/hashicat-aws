@@ -8,7 +8,9 @@ resource aws_vpc "hashicat" {
   enable_dns_hostnames = true
 
   tags = {
-    name = "${var.prefix}-vpc"
+    name = "${var.prefix}-vpc",
+    Billable = "true",
+    Department = "devops"
   }
 }
 
